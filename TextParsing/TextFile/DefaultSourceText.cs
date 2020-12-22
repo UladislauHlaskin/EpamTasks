@@ -1,4 +1,9 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor dapibus, vehicula nunc porta, 
+﻿namespace TextParsing.TextFile
+{
+    class DefaultSourceText
+    {
+        public static string Text =
+            @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor dapibus, vehicula nunc porta, 
 mattis lacus. Etiam dolor arcu, rhoncus a enim sed, malesuada 
 fermentum est. Sed commodo orci non faucibus finibus. In et tortor quis erat euismod
 facilisis non at orci. Etiam varius quis nibh eget venenatis. Vivamus nec lacus 
@@ -170,4 +175,6 @@ malesuada fames ac turpis egestas integer. Aliquet eget sit amet tellus cras adi
 enim eu turpis. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. 
 Lectus arcu bibendum at varius vel. Nisl suscipit adipiscing bibendum est ultricies 
 integer quis auctor. Enim ut sem viverra aliquet. Vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant.
+pulvinar pellentesque habitant.";
+    }
+}

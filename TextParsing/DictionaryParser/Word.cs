@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TextParsing.DictionaryParser
+﻿namespace TextParsing.DictionaryParser
 {
     class Word
     {
-        private string _word { get; }
+        public string Value { get; private set; }
         public int Position { get; }
         public Line Line { get; }
         public Word(string word, int position, Line line)
         {
-            _word = word;
+            Value = word;
             Position = position;
             Line = line;
         }

@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace TextParsing.DictionaryParser
 {
     class WordSeparator
     {
-        private static string[] _separators = new string[] { " ", ".", ",", ":", "!", "?", "?!", "!?", "...", "\n", "\t" };
+        private static readonly string[] _separators = new string[] 
+        { " ", ".", ",", ":", "!", "?", "?!", "!?", "...", "\n", "\t", "(", ")", "«", "»", ";", "[", "]", "<", ">", "\"" };
         public static List<Word> GetWords(Line line)
         {
             var words = line.Text.Split(_separators, StringSplitOptions.RemoveEmptyEntries)
