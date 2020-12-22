@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7500654F-2C62-4815-A5E9-AD7C3DC2C9F6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EpamTraining</RootNamespace>
+    <AssemblyName>EpamTraining</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mediaplayer\MediaplayerFileImplementation.cs" />
+    <Compile Include="Mediaplayer\MediaplayerSettings.cs" />
+    <Compile Include="MultimediaFiles\MultimediaFile.cs" />
+    <Compile Include="MultimediaFiles\MultimediaFileType.cs" />
+    <Compile Include="MultimediaFiles\Pictures\Image.cs" />
+    <Compile Include="MultimediaFiles\Pictures\Picture.cs" />
+    <Compile Include="MultimediaFiles\Pictures\PictureInfo.cs" />
+    <Compile Include="MultimediaFiles\Songs\SongInfo.cs" />
+    <Compile Include="Mediaplayer\Mediaplayer.cs" />
+    <Compile Include="MultimediaFiles\Songs\Sound.cs" />
+    <Compile Include="MultimediaFiles\Videos\Video.cs" />
+    <Compile Include="MultimediaFiles\Videos\VideoData.cs" />
+    <Compile Include="MultimediaFiles\Videos\VideoInfo.cs" />
+    <Compile Include="Playlists\Playlist.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MultimediaFiles\Songs\Song.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

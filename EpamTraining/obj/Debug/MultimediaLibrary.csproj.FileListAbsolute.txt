@@ -1,0 +1,7 @@
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\obj\Debug\MultimediaLibrary.csprojAssemblyReference.cache
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\obj\Debug\MultimediaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\bin\Debug\EpamTraining.exe.config
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\bin\Debug\EpamTraining.exe
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\bin\Debug\EpamTraining.pdb
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\obj\Debug\EpamTraining.exe
+C:\Users\Vladislav Glazkin\source\repos\EpamTraining\EpamTraining\obj\Debug\EpamTraining.pdb
