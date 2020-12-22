@@ -1,0 +1,6 @@
+C:\Users\Vladislav Glazkin\source\repos\Task1\AirCompany\bin\Debug\AirCompany.dll
+C:\Users\Vladislav Glazkin\source\repos\Task1\AirCompany\bin\Debug\AirCompany.pdb
+C:\Users\Vladislav Glazkin\source\repos\Task1\AirCompany\obj\Debug\AirCompany.csprojAssemblyReference.cache
+C:\Users\Vladislav Glazkin\source\repos\Task1\AirCompany\obj\Debug\AirCompany.csproj.CoreCompileInputs.cache
+C:\Users\Vladislav Glazkin\source\repos\Task1\AirCompany\obj\Debug\AirCompany.dll
+C:\Users\Vladislav Glazkin\source\repos\Task1\AirCompany\obj\Debug\AirCompany.pdb
