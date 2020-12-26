@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TextParsing.TextFile;
 
 namespace TextParsing.DictionaryParser
 {
-    class Dictionary : IDisposable
+    class Dictionary
     {
         public int PageCount { get; private set; }
         public List<DictionaryWord> DictionaryWords { get; set; }
@@ -110,13 +109,6 @@ namespace TextParsing.DictionaryParser
                 sb.AppendLine();
             }
             return sb.ToString();
-        }
-        /// <summary>
-        /// TODO
-        /// </summary>
-        public void Dispose()
-        {
-            throw new NotImplementedException();
         }
     }
 }

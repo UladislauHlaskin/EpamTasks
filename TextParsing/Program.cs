@@ -48,7 +48,7 @@ namespace TextParsing
             string path, menuSelection;
             Console.Clear();
             Console.Write(UserFileDialog());
-            path = Console.ReadLine() + ".txt";
+            path = Console.ReadLine();
             //Разумный exception handling;
             try
             {
@@ -67,7 +67,8 @@ namespace TextParsing
                 menuSelection = Console.ReadLine();
                 if (menuSelection == "1")
                 {
-                    ResultTextFile.Write(dictionary);
+                    ResultTextFile file = new ResultTextFile();
+                    file.Write(dictionary);
                     Console.Clear();
                     Console.WriteLine(ResultWritten());
                     Console.ReadKey();
@@ -103,7 +104,9 @@ namespace TextParsing
             menuSelection = Console.ReadLine();
             if (menuSelection == "1")
             {
-                ResultTextFile.Write(dictionary);
+                //ResultTextFile.Write(dictionary);
+                ResultTextFile file = new ResultTextFile();// .Write(dictionary);
+                file.Write(dictionary);
                 Console.Clear();
                 Console.WriteLine(ResultWritten());
                 Console.ReadKey();
@@ -121,7 +124,7 @@ namespace TextParsing
         private static string WriteResultDialog()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Записать результат в файл {ResultTextFile.Path}?");
+            sb.AppendLine($"Записать результат в файл {ResultTextFile.DefaultPath}?");
             sb.AppendLine("1. Да.");
             sb.AppendLine("2. Нет.");
             sb.Append("Выберите пункт меню: ");
@@ -130,13 +133,13 @@ namespace TextParsing
         private static string ResultWritten()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"Результат записан в файл {ResultTextFile.Path}");
+            sb.Append($"Результат записан в файл {ResultTextFile.DefaultPath}");
             return sb.ToString();
         }
         private static string UserFileDialog()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Укажите путь файла для записи результата (путь\\имя_файла без расширения)");
+            sb.AppendLine("Укажите путь файла для записи результата (путь\\имя_файла.расширение)");
             return sb.ToString();
         }
         private static string NoUserFileExists()
